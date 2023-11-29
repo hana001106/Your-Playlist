@@ -10,7 +10,6 @@ import pandas as pd
 from kiwipiepy import Kiwi
 import numpy as np
 #import plotly.figure_factory as ff
-from config import OPENAI_API_KEY
 
 def translate_text(text, target_language='en'):
     translator = Translator(to_lang=target_language)
@@ -19,7 +18,8 @@ def translate_text(text, target_language='en'):
 
 # API 키 설정 (실제 키로 대체해야 함)
 
-openai.api_key = OPENAI_API_KEY
+os.environ["OPEN_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+openai.api_key = os.environ["OPEN_API_KEY"]
 
 st.set_page_config(
     page_title="너만의 플레이리스트 너플리",
