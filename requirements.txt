@@ -1,10 +1,9 @@
 openai
 streamlit
 streamlit_chat
-PIL
+Pillow
 requests
 translate
-re
 pandas
 kiwipiepy
 numpy
