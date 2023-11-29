@@ -1,0 +1,11 @@
+openai
+streamlit
+streamlit_chat
+os
+PIL
+requests
+translate
+re
+pandas
+kiwipiepy
+numpy
