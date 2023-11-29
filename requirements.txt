@@ -1,7 +1,7 @@
 openai==0.28.1
 streamlit
 streamlit_chat
-Pillow
+Pillow==9.4.0
 requests
 translate
 pandas
